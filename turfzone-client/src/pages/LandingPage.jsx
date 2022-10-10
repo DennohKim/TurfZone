@@ -1,5 +1,6 @@
 import React from "react";
 import Partners from "../components/FeaturedPlayground/Partners";
+import Playgrounds from "../components/FeaturedPlayground/Playgrounds";
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <section className="h-screen">
         <div >
           <Partners />
+          <Playgrounds/>
         </div>
       </section>
 
