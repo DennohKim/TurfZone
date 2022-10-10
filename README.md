@@ -84,7 +84,7 @@ SOFTWARE.
 ## Authors Info
 Contributors - [Dennis Kimathi](https://github.com/DennohKim)
 [Wycliffe Ndiba]()
-[John Kamau]()
+[John Kamau](https://github.com/JohnKamaujk)
 [Silvia Mutete]()
 [Allan Ngoma]()
 
