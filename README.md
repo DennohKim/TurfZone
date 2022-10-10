@@ -86,6 +86,6 @@ Contributors - [Dennis Kimathi](https://github.com/DennohKim)
 [Wycliffe Ndiba]()
 [John Kamau]()
 [Silvia Mutete]()
-[Allan Ngoma]()
+[Allan Ngoma](https://github.com/allanstar-byte)
 
 [Go Back to the top](#TurfZone-Web-app)
