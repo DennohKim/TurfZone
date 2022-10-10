@@ -83,7 +83,7 @@ SOFTWARE.
 
 ## Authors Info
 Contributors - [Dennis Kimathi](https://github.com/DennohKim)
-[Wycliffe Ndiba]()
+[Wycliffe Ndiba](https://github.com/ESPersonnel)
 [John Kamau]()
 [Silvia Mutete]()
 [Allan Ngoma]()
