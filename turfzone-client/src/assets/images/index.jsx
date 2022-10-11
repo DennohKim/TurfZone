@@ -9,3 +9,4 @@ export {default as Kijiji} from './kijiji.png';
 export {default as Mugoya} from './mugoya.png';
 export {default as NgongRoad} from './ngong-road.png';
 export {default as Void} from './void.png';
+export {default as Logo} from './Logo.png';
