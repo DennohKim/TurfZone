@@ -1,12 +1,15 @@
 import React from "react";
 import Partners from "../components/FeaturedPlayground/Partners";
 import Playgrounds from "../components/FeaturedPlayground/Playgrounds";
+import Footer from "../components/Footer/Footer";
+import HeroSection from "../components/HeroSection/HeroSection";
 
 const LandingPage = () => {
   return (
     <div>
       <section className="h-screen">
         {/* Your code goes here - Hero Section */}
+        <HeroSection />
       </section>
 
       <section className="h-screen">
@@ -24,6 +27,7 @@ const LandingPage = () => {
       </section>
       <section className="h-screen">
         {/* Your Code Goes here - Footer*/}
+        <Footer />
       </section>
     </div>
   );
