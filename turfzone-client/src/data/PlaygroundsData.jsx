@@ -47,6 +47,7 @@ export const turfInfo = [
       turf_name: 'Arena 5 Astroturf - Jamhuri Primary',
       location: 'Jamhuri',
       rates: 'Kshs 3,500 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+      turf_manager: "",
     },
 ]
