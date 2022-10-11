@@ -1,6 +1,7 @@
 import React from "react";
 import Partners from "../components/FeaturedPlayground/Partners";
 import Playgrounds from "../components/FeaturedPlayground/Playgrounds";
+import WhyTurf from "../components/WhyTurf";
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
 
       <section className="h-screen">
         {/* Your code goes here - Why TurfZone */}
+        <WhyTurf/>
       </section>
       <section className="h-screen">
         {/* Your code goes here - Testimonials */}
