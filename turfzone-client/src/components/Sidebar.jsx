@@ -15,8 +15,8 @@ const Sidebar = () => {
   };
 
  
-  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-primary-color bg-white text-md m-2';
-  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-white hover:bg-white/[0.6] hover:text-primary-color m-2"
+  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-secondary-color font-semibold bg-white text-md m-2';
+  const normalLink = "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-white hover:bg-white/[0.6] hover:text-secondary-color hover:font-semibold m-2"
 
   return (
     <div className="bg-primary-color h-screen md:overflow-hidden md:hover:overflow-auto pb-10 pt-3 pl-5">
