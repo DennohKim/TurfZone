@@ -7,7 +7,7 @@ import HeroSection from "../components/HeroSection/HeroSection";
 const LandingPage = () => {
   return (
     <div>
-      <section className="h-screen">
+      <section className="h-screen hero-pattern dot-pattern">
         {/* Your code goes here - Hero Section */}
         <HeroSection />
       </section>
