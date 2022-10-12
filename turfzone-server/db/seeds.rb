@@ -68,4 +68,5 @@ Booking.create(start_time:"11/16/2022 16:00",end_time:"11/16/2022 18:30",user_id
 Booking.create(start_time:"10/12/2022 17:00",end_time:"10/12/2022 19:00",user_id:5,turf_id:3)
 Booking.create(start_time:"11/13/2022 09:00",end_time:"11/13/2022 15:50",user_id:2 ,turf_id:4)
 
+AdminUser.create!(email: 'admin@turfzone.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 puts "seeding completed"
