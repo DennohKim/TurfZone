@@ -13,3 +13,26 @@
 .button-primary{
     color: #37003C ;
 }
+
+/* .footballer {
+    position: absolute;
+    width: 402px;
+    height: 661px;
+    left: 165px;
+    top: 32px;
+} */
+
+.pink-button {
+    --tw-bg-opacity: 1;
+    background-color: #FE386B;
+}
+
+.pink-text {
+    --tw-text-opacity: 1;
+    color: #FE386B;
+}
+
+.bg-purple {
+    --tw-bg-opacity: 1;
+    background-color: #37003C;
+}
