@@ -5,9 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/src/assets/images/BG-Hero.png')",
-        'dot-pattern': "url('/src/assets/images/dot-pattern.png')",
+      colors: {
+        'primary-color': '#FE386B',
+        'secondary-color': '#37003C',
+        'secondary-darker': '#300134'
+
       },
     },
   },
