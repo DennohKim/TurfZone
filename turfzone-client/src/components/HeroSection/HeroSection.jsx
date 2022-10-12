@@ -8,13 +8,13 @@ const HeroSection = () => {
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center w-full">
         <div>
-          <img src={Footballer1} alt="Footballer" className="w-1/2 h-1/2" />
+          <img src={Footballer1} alt="Footballer" className="w-1/2 h-1/2 my-20 mx-52" />
         </div>
-        <div className="flex flex-col">
-          <h1 className="text-4xl font-bold text-black">
-            Connecting the turfs
+        <div className="flex flex-col m-16">
+          <h1 className="text-4xl font-bold text-white">
+            Connecting the <span className="pink-text">turf lovers</span>
           </h1>
-          <p className="text-lg text-black">
+          <p className="text-sm text-white my-6">
             Turf zone is a sportsground and outdoor playground booking portal
             that provides easy booking facility for schools, clubs and other
             sports organizations across Kenya. Enabling them to easily book a
@@ -22,7 +22,7 @@ const HeroSection = () => {
           </p>
           <a
             href="#"
-            className="px-4 py-2 text-lg font-bold text-white bg-pink-500 rounded-md hover:bg-pink-600"
+            className="text-center py-2 text-md font-bold text-white pink-button rounded-md hover:bg-pink-600"
           >
             Book Turf
           </a>
