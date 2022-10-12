@@ -11,7 +11,7 @@ function WhyTurf() {
          <div class="w-full px-4">
             <div class="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
               
-               <h2 class="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4"> Why TurfZone
+               <h2 class="pt-10 text-3xl font-extrabold text-center"> Why <span class="text-pink-600">TurfZone</span>
                </h2>
                <p class="text-base text-body-color">
                Turf zone is a sportsground and outdoor playground booking portal that provides easy 
