@@ -12,8 +12,8 @@ const LandingPage = () => {
 
       <section className="h-screen">
         <div >
-          {/* <Partners />
-          <Playgrounds/>  */}
+          <Partners />
+          {/* <Playgrounds/>  */}
         </div>
       </section>
 
