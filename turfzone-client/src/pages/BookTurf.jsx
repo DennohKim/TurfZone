@@ -5,8 +5,8 @@ import { Astroturf } from '../assets/images';
 import { useStateContext } from "../context/ContextProvider";
 import NavbarDashboard from "../components/NavbarDashboard";
 
-import DatetimeRangePicker from "react-datetime-range-picker";
-import moment from "moment";
+// import DatetimeRangePicker from "react-datetime-range-picker";
+// import moment from "moment";
 
 // import DateTimeRangePicker from "@wojtekmaj/react-datetimerange-picker";
 
@@ -77,7 +77,7 @@ const BookTurf = () => {
                 </div>
 
                 <div>
-                  <DatetimeRangePicker  />
+                  {/* <DatetimeRangePicker  /> */}
 
                 </div>
               </div>

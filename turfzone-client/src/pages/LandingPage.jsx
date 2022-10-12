@@ -17,7 +17,7 @@ const LandingPage = () => {
         <HeroSection />
       </section>
 
-      <section className="h-screen">
+      <section className="">
         <div >
           <Partners />
           <Playgrounds/>
