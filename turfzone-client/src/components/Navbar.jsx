@@ -86,19 +86,19 @@ export default function Example() {
                   </a>
                   <a
                     href="#"
-                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium hover:duration-500"
                   >
                     Featured Playgrounds
                   </a>
                   <a
                     href="#"
-                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium hover:duration-500"
                   >
                     Why TurfZone
                   </a>
                   <a
                     href="#"
-                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium hover:duration-500"
                   >
                     Testimonials
                   </a>
@@ -170,13 +170,13 @@ export default function Example() {
                         <div className="flex items-center justify-center">
           <a
             href="#"
-            className="px-4 py-2 text-md font-bold text-white pink-button rounded-md hover:bg-pink-600"
+            className="px-4 py-2 text-md font-bold text-white pink-button rounded-md hover:bg-pink-600 hover:animate-pulse"
           >
             Customer Login
           </a>
           <a
             href="#"
-            className="px-4 py-2 text-md font-bold text-black bg-white rounded-md hover:bg-pink-300"
+            className="px-4 py-2 text-md font-bold text-black bg-white rounded-md hover:bg-pink-300 hover:animate-pulse"
           >
             Admin Login
           </a>

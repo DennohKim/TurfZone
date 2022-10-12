@@ -25,7 +25,7 @@ const LandingPage = () => {
       <section className="h-screen">
         {/* Your code goes here - Testimonials */}
       </section>
-      <section className="h-screen">
+      <section className="">
         {/* Your Code Goes here - Footer*/}
         <Footer />
       </section>

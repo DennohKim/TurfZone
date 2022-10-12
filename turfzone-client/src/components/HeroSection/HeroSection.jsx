@@ -22,7 +22,7 @@ const HeroSection = () => {
           </p>
           <a
             href="#"
-            className="text-center py-2 text-md font-bold text-white pink-button rounded-md hover:bg-pink-600"
+            className="text-center py-2 text-md font-semibold text-white pink-button rounded-md hover:bg-pink-600 hover:animate-pulse w-32"
           >
             Book Turf
           </a>
