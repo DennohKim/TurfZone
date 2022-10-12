@@ -5,8 +5,8 @@ import {Call, Round, Soccer, Rect1, Rect2} from '../../assets/images';
 function WhyTurf() {
   return (
     
-<section id="whyTurfZone" className=" pb-20 content-center">
-   <div className="">
+<section id="whyTurfZone" className=" pb-20 content-center w-full">
+   <div className="w-4/5 mx-auto">
       <div className="flex flex-wrap -mx-4">
          <div className="w-full px-4">
             <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
@@ -24,7 +24,7 @@ function WhyTurf() {
 
       <div className="flex flex-wrap -mx-4">
          <div className="w-full md:w-1/2 lg:w-1/3 px-6">
-               <div className=" w-[70px] h-[70px] flex items-center justify-center bg-primary rounded-2xl mb-8">
+               <div className=" w-[70px] h-[70px] flex items-center justify-items-center bg-primary rounded-2xl mb-8">
                <img className=" items-center" src={Call} alt="Call" /> 
                </div>
                <p className=" text-black">
