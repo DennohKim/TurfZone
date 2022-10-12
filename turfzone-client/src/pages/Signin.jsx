@@ -1,37 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {LogoPink} from "../assets/images";
 
 import { Link, useNavigate } from "react-router-dom";
+// import { useStateContext } from "../context/ContextProvider";
 
 
-const Signup = () => {
-  const [email, setEmail] = useState("");
+const Signin = ({ user, setUser}) => {
+
+  // const { user, setUser } = useContext(useStateContext)
+
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState([]);
   const navigate = useNavigate();
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    try {
-      await signIn(email, password);
-      navigate("/dashboard");
-    } catch (e) {
-      setError(e.message);
-    }
-  };
 
+  function handleSubmit(e){
+    e.preventDefault();
+    fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        username,
+        password
+      }),
+
+    })
+    .then((r) => {
+      if (r.ok) {
+        r.json().then((user) => {
+          setUser(user)
+
+          // if(user) {
+          //   navigate("/dashboard");
+            
+          // }
+          // console.log(user)
+          
+        })
+        
+        
+      } else {
+        r.json().then((err) => setErrors(err.errors));
+      }
+    });
+
+  }
   return (
     <>
-      {/*
-      This example requires updating your template:
-
-      ```
-      <html class="h-full bg-gray-50">
-      <body class="h-full">
-      ```
-    */}
+   
       <div className="bg-[url('https://i.ibb.co/hXnG4KL/bg-signin.png')] bg-no-repeat bg-cover  h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
@@ -46,20 +66,25 @@ const Signup = () => {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form className="space-y-6" action="#" method="POST">
+            <form className="space-y-6" onSubmit={handleSubmit}>
+            {errors.map((err) => (
+              <p key={err}>{err}</p>
+            ))}
               <div>
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-500"
                 >
-                  Email address
+                  Username
                 </label>
                 <div className="mt-1">
                   <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
+                    id="username"
+                    name="username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    type="text"
+                    autoComplete="username"
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary-color focus:border-primary-color sm:text-sm"
                   />
@@ -77,6 +102,8 @@ const Signup = () => {
                   <input
                     id="password"
                     name="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     type="password"
                     autoComplete="current-password"
                     required
@@ -127,4 +154,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;

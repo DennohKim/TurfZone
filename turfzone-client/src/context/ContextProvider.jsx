@@ -6,6 +6,9 @@ export const ContextProvider = ({ children }) => {
   
   const [activeMenu, setActiveMenu] = useState(true);
   const [screenSize, setScreenSize] = useState(undefined);
+  const [user, setUser] = useState(null)
+
+  // useEffect(("") => {}, [])
 
 
   return (
@@ -14,7 +17,9 @@ export const ContextProvider = ({ children }) => {
         activeMenu,
         setActiveMenu,
         screenSize,
-        setScreenSize
+        setScreenSize,
+        user,
+        setUser
        
       }}
     >

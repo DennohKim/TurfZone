@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import {LogoPink} from "../assets/images";
+import { LogoPink } from "../assets/images";
 import { Link, useNavigate } from "react-router-dom";
-
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +9,7 @@ const Signup = () => {
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState([]);
   const navigate = useNavigate();
 
   // const handleSubmit = async (e) => {
@@ -50,7 +49,7 @@ const Signup = () => {
   //   })
   // }
 
-  function handleSubmit(e){
+  function handleSubmit(e) {
     e.preventDefault();
     fetch("http://localhost:3000/signup", {
       method: "POST",
@@ -63,21 +62,21 @@ const Signup = () => {
         phone_number: phoneNumber,
         password,
         password_confirmation: passwordConfirmation,
-      })
-    })
-    .then((r) => r.json())
-      .then((r) => console.log(r))
+      }),
+    }).then((r) => {
+      if (r.ok) {
+        navigate("/signin");
+      } else {
+        r.json().then((err) => setErrors(err.errors));
+      }
+    });
   }
 
   return (
     <>
       <div className="bg-[url('https://i.ibb.co/hXnG4KL/bg-signin.png')] min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <img
-            className="mx-auto h-12 w-auto"
-            src={LogoPink}
-            alt="Workflow"
-          />
+          <img className="mx-auto h-12 w-auto" src={LogoPink} alt="Workflow" />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
             Sign up for a new account
           </h2>
@@ -85,8 +84,11 @@ const Signup = () => {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form  onSubmit={handleSubmit} className="space-y-6">
-            <div>
+            <form onSubmit={handleSubmit} className="space-y-6">
+            {errors.map((err) => (
+              <p key={err}>{err}</p>
+            ))}
+              <div>
                 <label
                   htmlFor="username"
                   className="block text-sm font-medium text-gray-700"
@@ -97,7 +99,7 @@ const Signup = () => {
                   <input
                     id="username"
                     name="username"
-                    onChange={e => setUsername(e.target.value)}
+                    onChange={(e) => setUsername(e.target.value)}
                     type="text"
                     value={username}
                     autoComplete="username"
@@ -106,7 +108,6 @@ const Signup = () => {
                   />
                 </div>
               </div>
-
 
               <div>
                 <label
@@ -119,7 +120,7 @@ const Signup = () => {
                   <input
                     id="email"
                     name="email"
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     type="email"
                     autoComplete="email"
@@ -141,7 +142,7 @@ const Signup = () => {
                     id="Phone-number"
                     name="Phone Number"
                     value={phoneNumber}
-                    onChange={e => setPhoneNumber(e.target.value)}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                     type="text"
                     autoComplete="0712 234 567"
                     required
@@ -162,7 +163,7 @@ const Signup = () => {
                     id="password"
                     name="password"
                     value={password}
-                    onChange={e => setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                     type="password"
                     autoComplete="current-password"
                     required
@@ -183,7 +184,7 @@ const Signup = () => {
                     id="password-confirmation"
                     name="password-confirmation"
                     value={passwordConfirmation}
-                    onChange={e => setPasswordConfirmation(e.target.value)}
+                    onChange={(e) => setPasswordConfirmation(e.target.value)}
                     type="password"
                     autoComplete="current-password"
                     required
@@ -192,17 +193,16 @@ const Signup = () => {
                 </div>
               </div>
 
-        
-
               <div>
                 <button
                   type="submit"
-                  
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-color hover:bg-primary-color focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-color"
                 >
                   Sign up
                 </button>
               </div>
+         
+              
             </form>
           </div>
         </div>

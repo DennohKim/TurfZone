@@ -293,7 +293,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   puma (~> 5.0)
-  rack-cors
+  rack-cors (~> 1.1, >= 1.1.1)
   rails (~> 7.0.4)
   sassc (~> 2.4)
   sassc-rails
