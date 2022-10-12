@@ -7,8 +7,8 @@ const HeroSection = () => {
     <div className="flex flex-col">
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center w-full">
-        <div>
-          <img src={Footballer1} alt="Footballer" className="w-1/2 h-1/2 my-20 mx-52" />
+        <div className="flex justify-center items-center scale-75 md:scale-75 lg:scale-90">
+          <img src={Footballer1} alt="Footballer" className="flex justify-center items-center" />
         </div>
         <div className="flex flex-col m-16">
           <h1 className="text-4xl font-bold text-white">

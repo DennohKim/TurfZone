@@ -6,14 +6,16 @@ import Bookings from "./pages/Bookings";
 import Turfs from "./pages/Turfs";
 import BookTurf from "./pages/BookTurf";
 import Example from "./pages/bookturfdemo";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
-        <Route path="/signin" element={""}></Route>
-        <Route path="/signup" element={""}></Route>
+        <Route path="/signin" element={<Signin />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/turfs" element={<Turfs />}></Route>
         <Route path="/bookings" element={<Bookings />}></Route>

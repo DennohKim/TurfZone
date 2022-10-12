@@ -21,5 +21,6 @@ export {default as Rect1} from './Rect1.png';
 export {default as Rect2} from './Rect2.png';
 
 export {default as Logo} from './Logo.png';
+export {default as LogoPink} from './Logo-pink.png';
 
 
