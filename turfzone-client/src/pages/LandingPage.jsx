@@ -21,6 +21,7 @@ const LandingPage = () => {
         <div >
           <Partners />
           <Playgrounds/>
+          
         </div>
       </section>
 
