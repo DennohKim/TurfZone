@@ -1,5 +1,5 @@
 // import React from "react";
-// import { Logo } from "../assets/images";
+import { Logo } from "../assets/images";
 
 // const Navbar = () => {
 //   return (
@@ -67,13 +67,13 @@ export default function Example() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
+                    src={Logo}
+                    alt="TurfZone"
                   />
                   <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                    alt="Workflow"
+                    className="hidden lg:block h-12 w-auto mx-4"
+                    src={Logo}
+                    alt="TurfZone"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -86,31 +86,31 @@ export default function Example() {
                   </a>
                   <a
                     href="#"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
-                    Team
+                    Featured Playgrounds
                   </a>
                   <a
                     href="#"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
-                    Projects
+                    Why TurfZone
                   </a>
                   <a
                     href="#"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    className="border-transparent text-gray-300 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
-                    Calendar
+                    Testimonials
                   </a>
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                <button
+                {/* <button
                   type="button"
                   className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <span className="sr-only">View notifications</span>
-                </button>
+                </button> */}
 
                 {/* Profile dropdown
                 <Menu as="div" className="ml-3 relative">
@@ -170,13 +170,13 @@ export default function Example() {
                         <div className="flex items-center justify-center">
           <a
             href="#"
-            className="px-4 py-2 text-lg font-bold text-white bg-pink-500 rounded-md hover:bg-pink-600"
+            className="px-4 py-2 text-md font-bold text-white pink-button rounded-md hover:bg-pink-600"
           >
             Customer Login
           </a>
           <a
             href="#"
-            className="px-4 py-2 text-lg font-bold text-black bg-white-500 rounded-md hover:bg-pink-300"
+            className="px-4 py-2 text-md font-bold text-black bg-white rounded-md hover:bg-pink-300"
           >
             Admin Login
           </a>
@@ -210,23 +210,23 @@ export default function Example() {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                className="border-transparent text-gray-300 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Team
+                Featured Playgrounds
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                className="border-transparent text-gray-300 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Projects
+                Why TurfZone
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                className="border-transparent text-gray-300 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Calendar
+                Testimonials
               </Disclosure.Button>
             </div>
             {/* <div className="pt-4 pb-3 border-t border-gray-200">
