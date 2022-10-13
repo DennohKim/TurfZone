@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   delete "/logout", to: "sessions#destroy"
   resources :turves, only: [:index, :show, :create, :update, :delete]
   resources :bookings, only: [:index, :create, :show, :create, :update, :delete]
+  resources :sessions, only: [:create, :destroy]
+  get :logged_in, to: "sessions#logged_in"
+  delete :logout, to: "sessions#logout"
 end
