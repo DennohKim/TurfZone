@@ -20,21 +20,23 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
     </button>
   </TooltipComponent>
 );
-const NavbarDashboard = () => {
-  const { activeMenu, setActiveMenu } = useStateContext();
 
+
+
+const NavbarDashboard = () => {
+  const { activeMenu, setActiveMenu, user, setUser } = useStateContext();
 
   const navigate = useNavigate();
 
-  const handleLogout = async () => {
-    try {
-      await logout();
-      navigate("/");
-      console.log("You are logged out!");
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
+  function handleLogout() {
+    fetch("http://localhost:3000/logout", { method: "DELETE" }).then((r) => {
+      if (r.ok) {
+        setUser(null);
+        
+      }
+    });
+  }
+
 
   return (
     <div className="flex justify-between">
@@ -54,7 +56,7 @@ const NavbarDashboard = () => {
       <div className="flex p-4">
         <div className="pr-6">
           <p className="text-base font-bold py-2">Account</p>
-          <p className="text-base text-gray-600 ">Welcome Chizaa</p>
+          <p className="text-base text-gray-600 ">Welcome </p>
         </div>
 
         <button onClick={handleLogout} className="border-2 border-[#E62953] text-[#E62953] hover:bg-[#E62953] hover:text-white rounded px-6 py-2 my-4">

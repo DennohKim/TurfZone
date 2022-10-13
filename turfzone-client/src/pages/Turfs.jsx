@@ -3,6 +3,8 @@ import Sidebar from "../components/Sidebar";
 
 import { useStateContext } from "../context/ContextProvider";
 import NavbarDashboard from "../components/NavbarDashboard";
+import TurfsCard from "../components/Turfs/TurfsCard";
+import TurfsList from "../components/Turfs/TurfsList";
 
 const Turfs = () => {
   const { activeMenu } = useStateContext();
@@ -33,7 +35,11 @@ const Turfs = () => {
             <NavbarDashboard />
           
 
-            
+            <div className="px-12 mx-auto my-4 gap-8">
+            <TurfsList/>
+
+              
+            </div>
           </div>
         </div>
       </div>

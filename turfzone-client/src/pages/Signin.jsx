@@ -2,12 +2,12 @@ import React, { useState, useContext } from "react";
 import {LogoPink} from "../assets/images";
 
 import { Link, useNavigate } from "react-router-dom";
-// import { useStateContext } from "../context/ContextProvider";
+import { useStateContext } from "../context/ContextProvider";
 
 
-const Signin = ({ user, setUser}) => {
+const Signin = () => {
 
-  // const { user, setUser } = useContext(useStateContext)
+  const { user, setUser } = useStateContext();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -33,22 +33,16 @@ const Signin = ({ user, setUser}) => {
       if (r.ok) {
         r.json().then((user) => {
           setUser(user)
-
-          // if(user) {
-          //   navigate("/dashboard");
-            
-          // }
-          // console.log(user)
-          
+          navigate("/dashboard");
         })
-        
-        
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
     });
 
   }
+
+
   return (
     <>
    

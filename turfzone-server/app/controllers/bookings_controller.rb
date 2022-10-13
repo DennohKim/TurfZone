@@ -1,15 +1,18 @@
 class BookingsController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
+    # skip_before_action :authorize, only: [:index, :create]
+
     def index
         bookings = Booking.all
         render json: bookings, status: :ok
     end
 
     def create
-        booking = booking.create!(booking_params)
+        booking = @current_user.bookings.create!(booking_params)
         render json: booking, status: :created
     end
+    
     
     private
     

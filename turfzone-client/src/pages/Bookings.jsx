@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 
 import { useStateContext } from "../context/ContextProvider";
 import NavbarDashboard from "../components/NavbarDashboard";
+import BookingsList from "../components/MyBookings/BookingsList";
 
 const Bookings = () => {
   const { activeMenu } = useStateContext();
@@ -31,6 +32,11 @@ const Bookings = () => {
         >
           <div className="fixed md:static bg-main-bg navbar w-full">
             <NavbarDashboard />
+
+            <div className="px-12 mx-auto my-4 grid grid-cols gap-8">
+            <BookingsList/>
+
+            </div>
           
 
             

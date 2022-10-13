@@ -5,7 +5,7 @@ ActiveAdmin.register Turf do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :image_url, :name, :location, :rates, :description, :manager_name, :manager_email, :manager_number
+  permit_params :image_url, :name, :location, :rates, :description, :manager_name, :manager_email, :manager_number
   #
   # or
   #

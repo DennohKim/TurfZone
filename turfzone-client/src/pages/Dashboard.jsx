@@ -8,7 +8,7 @@ import { useStateContext } from "../context/ContextProvider";
 import NavbarDashboard from "../components/NavbarDashboard";
 
 const Dashboard = () => {
-  const { activeMenu } = useStateContext();
+  const { activeMenu, bookings, users, turfs } = useStateContext();
 
   return (
     <>
@@ -40,7 +40,7 @@ const Dashboard = () => {
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-primary-color hover:text-white">
                 <div>
                   <p className="pb-3 text-gray-600">Users</p>
-                  {/* <p className="font-bold text-4xl ">{users.length}</p> */}
+                  <p className="font-bold text-4xl ">{users.length}</p>
                 </div>
                 <div className="w-2/6" >
                   <HiOutlineUserGroup className="w-full fill-slate-600 hover:fill-white group-hover:stroke-white" size={40}/>
@@ -49,7 +49,7 @@ const Dashboard = () => {
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-primary-color hover:text-white">
                 <div>
                   <p className="pb-3 text-gray-600">Turfs</p>
-                  {/* <p className="font-bold text-4xl">{turfs.length}</p> */}
+                  <p className="font-bold text-4xl">{turfs.length}</p>
                 </div>
                 <div className="w-2/6">
                   <TbSoccerField className="w-full fill-slate-600 hover:fill-white" size={40} />
@@ -58,7 +58,7 @@ const Dashboard = () => {
               <div className="px-4 py-2 bg-slate-200 rounded flex justify-between hover:bg-primary-color hover:text-white">
                 <div>
                   <p className="pb-3 text-gray-600">Bookings</p>
-                  {/* <p className="font-bold text-4xl">{bookings.length}</p> */}
+                  <p className="font-bold text-4xl">{bookings.length}</p>
                 </div>
                 <div  className="w-2/6" >
                   <BiBookContent className="w-full outline-slate-200 " size={40}/>
