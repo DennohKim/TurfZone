@@ -16,7 +16,7 @@ export const testimonialInfo = [
     {
         image: "https://i.ibb.co/5c0LCH1/Ellipse-3.png",
         quote: '“TurfZone booking is a great way to reserve some time on the sports field. With turf zone, you can book the time on your favourite sports ground whenever you want. Its easy, quick, and efficient.”',
-        name: 'South C',
+        name: 'Evans Ruto',
     },
 
     {

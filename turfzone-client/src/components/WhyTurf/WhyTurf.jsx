@@ -5,7 +5,7 @@ import {Call, Round, Soccer, Rect1, Rect2} from '../../assets/images';
 function WhyTurf() {
   return (
     
-<section id="whyTurfZone" className=" pb-20 content-center w-full">
+<section id="whyTurfZone" className="content-center w-full">
    <div className="w-4/5 mx-auto">
       <div className="flex flex-wrap -mx-4">
          <div className="w-full px-4">
@@ -13,7 +13,7 @@ function WhyTurf() {
               
                <h2 className="pt-20 text-2xl font-extrabold text-center"> Why <span className="text-pink-600">TurfZone</span>
                </h2>
-               <p className="text-base text-black">
+               <p className="text-base pt-10 text-black">
                Turf zone is a sportsground and outdoor playground booking portal that provides easy 
                booking facility for schools, clubs and other sports organizations across Kenya.
                Enabling them to easily book a turf playground online - anytime.
@@ -22,7 +22,7 @@ function WhyTurf() {
          </div>
       </div>
 
-      <div className="flex flex-wrap -mx-4">
+      <div className="flex flex-wrap pb">
          <div className="w-full md:w-1/2 lg:w-1/3 px-6">
                <div className=" w-[70px] h-[70px] flex items-center justify-items-center bg-primary rounded-2xl mb-8">
                <img className=" items-center" src={Call} alt="Call" /> 
@@ -41,7 +41,7 @@ function WhyTurf() {
                </p>
          </div>
 
-         <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+         <div className="w-full md:w-1/2 lg:w-1/3 px-4 ">
                <div className='w-[70px] h-[70px] flex  items-center justify-center bg-primary rounded-2xl mb-8'>
                <img src={Soccer} alt="Soccer-field" />
                </div>
@@ -50,9 +50,9 @@ function WhyTurf() {
                </p>
          </div>
          
-         <div className='flex  justify-center gap-20  p-10 w-full   bg-purple-900 '>
-        <img  className='object-cover h-80 ' src={Rect1} alt='User bookings'/>
-        <img  className='object-cover h-80' src={Rect2} alt='Turf Playgrounds' />
+         <div className='flex  justify-center gap-20 py-10 w-full rounded-lg mt-10 bg-purple-900 '>
+        <img  className='object-cover  ' src={Rect1} alt='User bookings'/>
+        
         </div>
          
 

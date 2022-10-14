@@ -34,7 +34,7 @@ export default function Example() {
                     href="#"
                     className="border-primary-color-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
-                    Dashboard
+                    Home
                   </a>
                   <a
                     href="#"
@@ -102,7 +102,7 @@ export default function Example() {
                 href="#"
                 className="bg-primary-color-50 border-primary-color-500 text-black block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Dashboard
+                Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"

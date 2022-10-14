@@ -4,6 +4,7 @@ import Playgrounds from "../components/FeaturedPlayground/Playgrounds";
 
 import Footer from "../components/Footer/Footer";
 import HeroSection from "../components/HeroSection/HeroSection";
+import Testimonials from "../components/Testimonials/Testimonials";
 import WhyTurf from "../components/WhyTurf/WhyTurf";
 
 
@@ -24,15 +25,16 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className="h-screen">
+      <section className="">
         <div>
         <WhyTurf/>
         </div>
         
       </section>
 
-      <section className="h-screen">
+      <section className="">
         {/* Your code goes here - Testimonials */}
+        <Testimonials/>
       </section>
       <section className="">
         {/* Your Code Goes here - Footer*/}

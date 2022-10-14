@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PlaygroundCard = ({ image, location, description, turfName, rates }) => {
   return (
@@ -25,7 +26,10 @@ const PlaygroundCard = ({ image, location, description, turfName, rates }) => {
           </p>
         </div>
         <div>
-        <Link to="/signin" className="w-full active:scale-90 bg-secondary-color transition duration-150 ease-in-out hover:bg-secondary-darker rounded text-white hover:font-semibold px-8 py-3 text-sm">Book Turf</Link>
+
+        <Link to="/signin">
+        <button className="w-full active:scale-90 bg-secondary-color transition duration-150 ease-in-out hover:bg-secondary-darker rounded text-white hover:font-semibold px-8 py-3 text-sm">Book Turf</button>
+        </Link>
                 
         </div>
       </div>
