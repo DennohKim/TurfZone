@@ -9,12 +9,21 @@ class BookingsController < ApplicationController
     end
 
     def create
-        booking = @current_user.bookings.create!(booking_params)
+        booking = Booking.create!(booking_params)
         render json: booking, status: :created
     end
     
-    
+    def destroy
+        booking = find_booking
+        booking.destroy
+        head :no_content
+    end
+
     private
+
+    def find_booking
+        Booking.find(params[:id])
+    end
     
     def booking_params
         params.permit(:start_time, :end_time, :user_id, :turf_id)

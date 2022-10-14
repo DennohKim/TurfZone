@@ -11,7 +11,7 @@ Turf.create(image_url: "https://images.unsplash.com/photo-1459865264687-595d652d
 name: 'Turf mugoya football',
 location: 'South C',
 rates:4500,
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+description: 'Changing Rooms. Flood lights in place.',
 manager_name:"Charles Mugaka",
 manager_email:"mugaka@gmail.com",
 manager_number:"0756412347")
@@ -19,7 +19,7 @@ Turf.create(image_url: "https://images.unsplash.com/photo-1529900748604-07564a03
 name: 'Kijiji field(Turf)',
 location: 'South B',
 rates: 3500,
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+description: 'Water available. Changing Rooms.',
 manager_name:"Ruth Wambui",
 manager_email:"boboruth@gmail.com",
 manager_number:"076754321")
@@ -27,7 +27,7 @@ Turf.create(image_url: "https://images.unsplash.com/photo-1536122985607-4fe00b28
 name: 'The Void Turf',
 location: 'Embakasi',
 rates: 4000,
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+description: 'Water available. Changing Rooms. Flood lights in place.',
 manager_name:"Jimmy Bowen",
 manager_email:"Jamiebowe@gmail.com",
 manager_number:"07786412347")
@@ -35,7 +35,7 @@ Turf.create(image_url: "https://images.unsplash.com/photo-1524015368236-bbf6f725
 name: 'Ngong Road Arena',
 location: 'Ngong Road',
 rates: 4500,
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+description: 'Water available. Changing Rooms. Mulitple turfs.',
 manager_name:"Jeremiah Kiunu",
 manager_email:"Kjeremy@gmail.com",
 manager_number:"0776857697")
@@ -43,7 +43,7 @@ Turf.create(image_url: "https://images.unsplash.com/photo-1550881111-7cfde14b807
 name: 'Camp Toyoyo',
 location: 'Parklands',
 rates: 4000,
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+description: 'Water available. Changing Rooms. Multiple turfs.',
 manager_name:"Mary Sisia",
 manager_email:"Sisiamary@gmail.com",
 manager_number:"0711028399")
@@ -51,7 +51,7 @@ Turf.create(image_url: "https://images.unsplash.com/photo-1518604666860-9ed391f7
 name: 'Arena 5 Astroturf - Jamhuri Primary',
 location: 'Jamhuri',
 rates: 3500,
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+description: 'Water available. Changing Rooms. Flood lights in place.',
 manager_name:"Gideon Kinyanjui",
 manager_email:"giddykinyash@gmail.com",
 manager_number:"0760002341")

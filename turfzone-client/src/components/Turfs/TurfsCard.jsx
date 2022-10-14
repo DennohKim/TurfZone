@@ -3,7 +3,7 @@ import { useState } from 'react';
 import BookTurfModal from './BookTurfModal';
 
 
-const TurfsCard = ({ image, name, location, description, rates, manager_name, manager_email, manager_number }) => {
+const TurfsCard = ({ image, name, location, description, rates, manager_name, manager_email, manager_number, userId, turfId }) => {
 
   const [modal, setModal] = useState(true);
 
@@ -13,7 +13,7 @@ const TurfsCard = ({ image, name, location, description, rates, manager_name, ma
         <div>
           <img src={image} alt="turf image" />
         </div>
-        <p className='pt-4 font-bold text-base md:text-lg lg:text-xl '>{name}</p>
+        <p className='pt-4 font-bold text-sm md:text-base lg:text-lg '>{name}</p>
         <div className='flex justify-between py-4 '>
           <div>
             <p className='pb-2 font-semibold'>Location</p>
@@ -21,7 +21,7 @@ const TurfsCard = ({ image, name, location, description, rates, manager_name, ma
           </div>
           <div>
             <p className='pb-2 font-semibold'>Rates</p>
-            <p>{rates}</p>
+            <p>Kshs {rates} /hour</p>
           </div>
         </div>
         <div className='pb-2'>
@@ -32,7 +32,7 @@ const TurfsCard = ({ image, name, location, description, rates, manager_name, ma
         </div>
         <div>
        
-        <BookTurfModal turfname={name} rates={rates} manager = {manager_name} managerEmail = {manager_email} managerNumber = {manager_number}/>
+        <BookTurfModal turfname={name} rates={rates} manager = {manager_name} managerEmail = {manager_email} managerNumber = {manager_number} userId={userId} turfId={turfId}/>
                 
         </div>
       </div>

@@ -200,6 +200,12 @@ const Signup = () => {
                 >
                   Sign up
                 </button>
+                <p className="py-4 md:text-sm lg:text-base  text-center">
+                    Already have an account?{" "}
+                    <Link to="/signin" className="underline text-primary-color">
+                      Sign in.
+                    </Link>
+                </p>
               </div>
          
               

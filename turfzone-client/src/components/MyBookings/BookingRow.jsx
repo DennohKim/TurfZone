@@ -1,8 +1,23 @@
 import React from "react";
+import { useStateContext } from "../../context/ContextProvider";
 
 const BookingRow = ({ booking }) => {
   
-  const { start_time, end_time, turf } = booking;
+  const { start_time, end_time, turf, id } = booking;
+  const { bookingUrl, setBookings } = useStateContext();
+
+  function handleBookingDelete(id) {
+    const updatedBookings = booking.filter((bookingInfo) => bookingInfo.id !== id);
+    setBookings(updatedBookings);
+  }
+
+  function handleDeleteClick() {
+    fetch(`${bookingUrl}/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then(() => handleBookingDelete(id));
+  }
 
   return (
     <>
@@ -21,9 +36,9 @@ const BookingRow = ({ booking }) => {
             {end_time}
           </td>
           <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-            <a href="#" className="text-indigo-600 hover:text-indigo-900">
+            <button onClick={handleDeleteClick} className="text-indigo-600 hover:text-indigo-900">
               Delete
-            </a>
+            </button>
           </td>
         </tr>
       </tbody>
