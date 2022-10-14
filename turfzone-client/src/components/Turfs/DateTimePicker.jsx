@@ -8,6 +8,8 @@ import Stack from '@mui/material/Stack';
 
 export default function DateTimeValidation() {
   const [value, setValue] = React.useState('');
+  const [startTime, setStartTime] = React.useState('');
+  const [endTime, setEndTime] = React.useState('');
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -17,7 +19,7 @@ export default function DateTimeValidation() {
           label="Start Time"
           value={value}
           onChange={(newValue) => {
-            setValue(newValue);
+            setStartTime(newValue);
           }}
           minDateTime={dayjs('2022-04-02T12:00')}
         />
@@ -26,7 +28,7 @@ export default function DateTimeValidation() {
           label="End Time"
           value={value}
           onChange={(newValue) => {
-            setValue(newValue);
+            setEndTime(newValue);
           }}
           minDate={dayjs('2022-02-14')}
           minTime={dayjs('2022-02-14T08:00')}
