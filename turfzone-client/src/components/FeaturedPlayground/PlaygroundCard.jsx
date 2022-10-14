@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PlaygroundCard = ({ image, location, description, turfName, rates }) => {
   return (
