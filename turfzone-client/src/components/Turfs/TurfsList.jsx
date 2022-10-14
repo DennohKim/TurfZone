@@ -4,11 +4,15 @@ import TurfsCard from "./TurfsCard";
 
 const TurfsList = () => {
 
-  const { turfs, setTurfs } = useStateContext()
+  const { turfs, setTurfs, user } = useStateContext()
+
+  
   const TurfsList = turfs.map((turf) => {
     return (
       <TurfsCard
         key={turf.id}
+        userId={user.id}
+        turfId={turf.id}
         image={turf.image_url}
         name={turf.name}
         location={turf.location}

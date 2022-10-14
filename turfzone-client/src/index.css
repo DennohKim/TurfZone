@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
     font-family: 'Exo', sans-serif;
 }
@@ -32,3 +34,4 @@
     background-color: #37003C ;
 
 }
+

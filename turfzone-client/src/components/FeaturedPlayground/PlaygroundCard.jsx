@@ -25,7 +25,7 @@ const PlaygroundCard = ({ image, location, description, turfName, rates }) => {
           </p>
         </div>
         <div>
-        <button className="w-full active:scale-90 bg-secondary-color transition duration-150 ease-in-out hover:bg-secondary-darker rounded text-white hover:font-semibold px-8 py-3 text-sm">Book Turf</button>
+        <Link to="/signin" className="w-full active:scale-90 bg-secondary-color transition duration-150 ease-in-out hover:bg-secondary-darker rounded text-white hover:font-semibold px-8 py-3 text-sm">Book Turf</Link>
                 
         </div>
       </div>

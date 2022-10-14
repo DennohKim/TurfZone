@@ -5,7 +5,7 @@ class BookingsController < ApplicationController
 
     def index
         bookings = Booking.all
-        render json: bookings, status: :ok
+        render json: bookings, Serializer: BookingTurvesSerializer, status: :ok
     end
 
     def create

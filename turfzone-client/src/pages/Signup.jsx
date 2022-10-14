@@ -86,7 +86,7 @@ const Signup = () => {
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <form onSubmit={handleSubmit} className="space-y-6">
             {errors.map((err) => (
-              <p key={err}>{err}</p>
+              <p className="text-red-500"  key={err}>{err}</p>
             ))}
               <div>
                 <label

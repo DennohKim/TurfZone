@@ -14,19 +14,19 @@ export const ContextProvider = ({ children }) => {
   const [bookings, setBookings] = useState([])
   const [user, setUser] = useState(null);
   const [users, setUsers] = useState([]);
+  
+  useEffect(() => {
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => {
+          setUser(user)
+          console.log(user)
 
-  // useEffect(() => {
-  //   // auto-login
-  //   fetch("/me").then((r) => {
-  //     if (r.ok) {
-  //       r.json().then((user) => {
-  //         setUser(user)
-  //         console.log(user)
-
-  //       });
-  //     }
-  //   });
-  // }, []);
+        });
+      }
+    });
+  }, []);
 
   useEffect(() => {
     fetch(turfUrl)
@@ -62,6 +62,7 @@ export const ContextProvider = ({ children }) => {
         setBookings,
         users,
         setUsers,
+        bookingUrl,
       
        
       }}
