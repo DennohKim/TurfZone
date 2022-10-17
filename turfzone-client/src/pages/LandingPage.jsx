@@ -12,7 +12,7 @@ import WhyTurf from "../components/WhyTurf/WhyTurf";
 const LandingPage = () => {
   return (
     <div>
-      <section className="bg-[url('https://i.ibb.co/sg756x4/bg-small.png')] md:bg-[url('https://i.ibb.co/nLkSzPk/bg-medium.png')] lg:bg-[url('https://i.ibb.co/j64rJSM/BG.png')] bg-no-repeat bg-cover">
+      <section className="bg-[url('https://user-images.githubusercontent.com/63696529/196103011-aea90416-5837-482b-bb5b-ae1dd3860186.png')] md:bg-[url('https://user-images.githubusercontent.com/63696529/196103716-50d76861-d72f-4db8-88ba-a582709c69e8.png')] lg:bg-[url('https://user-images.githubusercontent.com/63696529/196103519-341471f4-79ef-447d-a457-22dbfcad8401.png')] bg-no-repeat bg-cover">
 
         {/* Your code goes here - Hero Section */}
         <HeroSection />
