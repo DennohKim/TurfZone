@@ -1,13 +1,11 @@
 
-import { Astroturf, CampToyoyo, Kijiji, Mugoya, NgongRoad, Void } from '../assets/images';
-
 export const turfInfo = [
     {
       image: "https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       turf_name: 'Turf mugoya football',
       location: 'South C',
       rates: 'Kshs 4,500 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort'
+      description: 'Changing Rooms. Flood lights in place.'
     },
 
     {
@@ -15,7 +13,7 @@ export const turfInfo = [
       turf_name: 'Kijiji field(Turf)',
       location: 'South B',
       rates: 'Kshs 3,500 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort'
+      description: 'Water available. Changing Rooms.'
     },
 
     {
@@ -23,7 +21,7 @@ export const turfInfo = [
       turf_name: 'The Void Turf',
       location: 'Embakasi',
       rates: 'Kshs 4,000 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort'
+      description: 'Water available. Changing Rooms. Flood lights in place.'
     },
 
     {
@@ -31,7 +29,7 @@ export const turfInfo = [
       turf_name: 'Ngong Road Arena',
       location: 'Ngong Road',
       rates: 'Kshs 4,500 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort'
+      description: 'Water available. Changing Rooms. Mulitple turfs.'
     },
 
     {
@@ -39,7 +37,7 @@ export const turfInfo = [
       turf_name: 'Camp Toyoyo',
       location: 'Parklands',
       rates: 'Kshs 4,000 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort'
+      description: 'Water available. Changing Rooms. Multiple turfs.'
     },
 
     {
@@ -47,7 +45,7 @@ export const turfInfo = [
       turf_name: 'Arena 5 Astroturf - Jamhuri Primary',
       location: 'Jamhuri',
       rates: 'Kshs 3,500 /hour',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida mi praesent ac sapien nisl, et quis sit.Quis massa tort',
+      description: 'Water available. Changing Rooms. Flood lights in place.',
       turf_manager: "",
     },
 ]

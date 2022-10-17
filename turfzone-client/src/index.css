@@ -2,14 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
     font-family: 'Exo', sans-serif;
 }
 
 .primary-color{
-    color: #FE386B;
+    background-color: #FE386B;
 }
 
 .button-primary{
+
     color: #37003C ;
 }
+
+.pink-button {
+    --tw-bg-opacity: 1;
+    background-color: #FE386B;
+}
+
+.pink-text {
+    --tw-text-opacity: 1;
+    color: #FE386B;
+}
+
+.bg-purple {
+    --tw-bg-opacity: 1;
+    background-color: #37003C;
+
+    background-color: #37003C ;
+
+}
+

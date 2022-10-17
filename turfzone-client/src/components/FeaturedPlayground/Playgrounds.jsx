@@ -16,11 +16,11 @@ const Playgrounds = () => {
     );
   });
   return (
-    <div>
-      <h2 className="pt-10 text-3xl font-extrabold text-center">
-        Featured <span>Playgrounds</span>
+    <div className="w-full">
+      <h2 className="pt-4 text-3xl font-extrabold text-center">
+        Featured <span className="text-primary-color">Playgrounds</span>
       </h2>
-      <div className="pt-20 mx-12 grid gap-8 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 align-center">{playgroundList}</div>
+      <div className="pt-20 w-4/5 mx-auto grid gap-8 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 align-center">{playgroundList}</div>
     </div>
   );
 };
