@@ -12,46 +12,11 @@ const Signup = () => {
   const [errors, setErrors] = useState([]);
   const navigate = useNavigate();
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setError("");
-  //   try {
-  //     await signIn(email, password);
-  //     navigate("/dashboard");
-  //   } catch (e) {
-  //     setError(e.message);
-  //   }
-  // };
 
-  // function handleSubmit(event){
-  //   event.preventDefault();
-
-  //   const addLandForm = { description: formData.description,
-  //   reference: formData.reference,
-  //   value: formData.value,
-  //   size: formData.size,
-  //   location: formData.location,
-  //   date: formData.date,
-  //   details:formData.details,}
-
-  //   fetch(landUrl, {
-  //     method: "POST",
-  //     headers: {
-  //       "content-type": "application/json"
-  //     },
-  //     body: JSON.stringify(addLandForm)
-
-  //   })
-  //   .then(response => response.json())
-  //   .then(newLandComparable => {
-  //     onAddLand(newLandComparable)
-  //     setFormData({...formData,  description: "", reference: "", value:"", size:"", location:"",date:"" })
-  //   })
-  // }
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/signup", {
+    fetch("https://turfzone.herokuapp.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -74,7 +39,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className="bg-[url('https://i.ibb.co/hXnG4KL/bg-signin.png')] min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="bg-[url('https://user-images.githubusercontent.com/63696529/196104349-76e63e05-1604-48bb-8eac-9473932ecf04.png')] min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img className="mx-auto h-12 w-auto" src={LogoPink} alt="Workflow" />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
