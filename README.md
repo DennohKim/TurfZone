@@ -2,7 +2,7 @@
 ## By Dennis Kimathi | Wycliffe Ndiba | John Kamau | Silvia Mutete | Allan Ngoma
 
 ## Screenshot
- ![image](./assets/images/Welcome-screen.png)
+ ![image](./turfzone-client/src/assets/images/turfs.png)
 
  ## Table of Content
  - [Description](#description)
@@ -21,11 +21,11 @@
 
 [Go Back to the top](#TurfZone-Web-app)
 ## Features
-1. As a user, I want to 
-2. As a user, I want to 
-3. As a user, I want to 
-4. As a user, I want to 
-5. As a user, I want to 
+1. As a user, I want to sign up as new user.
+2. As a user, I want to sign in.
+3. As a user, I want to view available turf playgrounds.
+4. As a user, I want to book a turf at a particular time.
+
 
 [Go Back to the top](#TurfZone-Web-app)
 
@@ -50,12 +50,13 @@ Figma Design -[TurfZone-Web-app](https://www.figma.com/file/BGJQUi8O4Hcrzglhx2M3
  [Go Back to the top](#TurfZone-Web-app)
 
 ### Live Link
-- Click this link to view the live application https://github.com/DennohKim/TurfZone
+- Click this link to view the live application http://turfzone.vercel.app/
 
 ### Technology  Used
-* HTML - which was used to develope the structure off the pages.
-* CSS - which was used to style the User Interface.
-* JAVASCRIPT - which was used for DOM(Document Object Manipulation) scripts.
+* REACT - which was used to develope the structure off the pages.
+* TAILWINDCSS - which was used to style the User Interface.
+* RAILS API WITH ACTIVE ADMIN - which was used to create an api as well manage admin and users on the application.
+* HEROKU & VERCEL - which was used to deploy the project. Heroku for backend and vercel for frontend.
 [Go Back to the top](#TurfZone-Web-app)
 
 ## Known Bugs
