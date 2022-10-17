@@ -29,7 +29,7 @@ export default function BookTurfModal({
       user_id: userId,
       turf_id: turfId,
     };
-    fetch("http://localhost:3000/bookings", {
+    fetch("https://turfzone.herokuapp.com/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

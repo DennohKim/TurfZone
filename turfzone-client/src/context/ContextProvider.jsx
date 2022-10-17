@@ -4,9 +4,9 @@ const StateContext = createContext();
 
 export const ContextProvider = ({ children }) => {
 
-  const turfUrl = "http://localhost:3000/turves"
-  const bookingUrl = "http://localhost:3000/bookings"
-  const usersUrl = "http://localhost:3000/users"
+  const turfUrl = "https://turfzone.herokuapp.com/turves"
+  const bookingUrl = "https://turfzone.herokuapp.com/bookings"
+  const usersUrl = "https://turfzone.herokuapp.com/users"
   
   const [activeMenu, setActiveMenu] = useState(true);
   const [screenSize, setScreenSize] = useState(undefined);
