@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { useStateContext } from "../../context/ContextProvider";
-
+// import DateTimePicker from "./DateTimePicker"
 export default function BookTurfModal({
   userId,
   turfId,
@@ -16,8 +16,7 @@ export default function BookTurfModal({
   const [selectedStartTime, setSelectedStartTime] = useState(new Date());
   const [selectedEndTime, setSelectedEndTime] = useState(new Date());
 
-
-  function handleAddTime(newBookings) {
+  function handleAddBooking(newBookings) {
     setBookings([...bookings, newBookings]);
   }
 
@@ -30,7 +29,7 @@ export default function BookTurfModal({
       user_id: userId,
       turf_id: turfId,
     };
-    fetch("bookingUrl", {
+    fetch("http://localhost:3000/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -39,10 +38,10 @@ export default function BookTurfModal({
     })
       .then((response) => response.json())
       .then((newBooking) => {
-        handleAddTime(newBooking);
+        handleAddBooking(newBooking);
       });
   }
-
+  
   return (
     <>
       <button
@@ -79,7 +78,7 @@ export default function BookTurfModal({
                   </div>
                   <div>
                     <h2>
-                      {" "}
+                      
                       <span className="font-semibold">Email:</span>{" "}
                       {managerEmail}
                     </h2>
@@ -90,34 +89,35 @@ export default function BookTurfModal({
                   </div>
                   <h2 className="pt-6 font-semibold ">
                     {" "}
-                    Rates: <span> Kshs. </span>
+                    <span>Kshs. </span>
                     {rates} <span>/hour</span>
                   </h2>
                 </div>
                 <form onSubmit={handleSubmit}>
-                  <div className="p-6 mb-4 gap-8">
-                    <label className="pb-2 font-semibold">Start time: </label>
+                  <div className="p-6">
+                    <label className="pb-2">Start time: </label>
                     <input
                       type="date"
                       value={selectedStartTime}
                       onChange={(e) => setSelectedStartTime(e.target.value)}
-                      className="mb-2 pr-4"
-                      min="10-14-2022"
-
                     />
-                    <label className="pb-4 font-semibold">End time:</label>
+                    <label className="pb-2">End time:</label>
                     <input
                       type="date"
                       value={selectedEndTime}
                       onChange={(e) => setSelectedEndTime(e.target.value)}
-                      className="mb-4"
                     />
+                    
                     <button
                       className="w-full active:scale-90 bg-secondary-color transition duration-150 ease-in-out hover:bg-secondary-darker rounded text-white hover:font-semibold px-2 py-3 text-sm"
                       type="submit"
                     >
                       Book Turf
                     </button>
+
+                    
+                    
+                    
                   </div>
                 </form>
                 {/*footer*/}

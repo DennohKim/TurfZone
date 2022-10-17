@@ -12,20 +12,27 @@ export const ContextProvider = ({ children }) => {
   const [screenSize, setScreenSize] = useState(undefined);
   const [turfs, setTurfs] = useState([])
   const [bookings, setBookings] = useState([])
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState([]);
   const [users, setUsers] = useState([]);
   
   useEffect(() => {
     // auto-login
-    fetch("/me").then((r) => {
-      if (r.ok) {
-        r.json().then((user) => {
-          setUser(user)
-          console.log(user)
+    // fetch("/me").then((r) => {
+    //   if (r.ok) {
+    //     r.json().then((user) => {
+    //       setUser(user)
+    //       console.log(user)
 
-        });
-      }
-    });
+    //     });
+    //   }
+    // });
+
+    const userInfo = JSON.parse(localStorage.getItem('user'))
+
+    if (userInfo){
+      setUser(userInfo)
+    }
+
   }, []);
 
   useEffect(() => {
