@@ -3,7 +3,7 @@ export const testimonialInfo = [
     {
       image: "https://user-images.githubusercontent.com/63696529/196117661-57f87a6f-2155-4328-8b48-fa27d6ec85a2.png",
       quote: '“Let us help you find a suitable time for your team to practice or play on the turf.”',
-      name: 'Abdrizak Hamza',
+      name: 'John Kamau',
       
     },
 
