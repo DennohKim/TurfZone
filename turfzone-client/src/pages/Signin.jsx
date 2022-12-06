@@ -1,12 +1,10 @@
 import React, { useState, useContext } from "react";
-import {LogoPink} from "../assets/images";
+import { LogoPink } from "../assets/images";
 
 import { Link, useNavigate } from "react-router-dom";
 // import { useStateContext } from "../context/ContextProvider";
 
-
-const Signin = ({ user, setUser}) => {
-
+const Signin = ({ user, setUser }) => {
   // const { user, setUser } = useContext(useStateContext)
 
   const [username, setUsername] = useState("");
@@ -14,51 +12,38 @@ const Signin = ({ user, setUser}) => {
   const [errors, setErrors] = useState([]);
   const navigate = useNavigate();
 
-
-
-  function handleSubmit(e){
+  function handleSubmit(e) {
     e.preventDefault();
     fetch("http://localhost:3000/login", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         username,
-        password
+        password,
       }),
-
-    })
-    .then((r) => {
+    }).then((r) => {
       if (r.ok) {
         r.json().then((user) => {
-          setUser(user)
+          setUser(user);
 
           // if(user) {
           //   navigate("/dashboard");
-            
+
           // }
           // console.log(user)
-          
-        })
-        
-        
+        });
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
     });
-
   }
   return (
     <>
-   
       <div className="bg-[url('https://i.ibb.co/hXnG4KL/bg-signin.png')] bg-no-repeat bg-cover  h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <img
-            className="mx-auto h-12 w-auto"
-            src={LogoPink}
-            alt="Workflow"
-          />
+          <img className="mx-auto h-12 w-auto" src={LogoPink} alt="Workflow" />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
             Sign in to your account
           </h2>
@@ -67,9 +52,9 @@ const Signin = ({ user, setUser}) => {
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <form className="space-y-6" onSubmit={handleSubmit}>
-            {errors.map((err) => (
-              <p key={err}>{err}</p>
-            ))}
+              {errors.map((err) => (
+                <p key={err}>{err}</p>
+              ))}
               <div>
                 <label
                   htmlFor="email"

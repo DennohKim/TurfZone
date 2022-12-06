@@ -11,7 +11,7 @@ import Signup from "./pages/Signup";
 
 function App() {
 
-  const [user, setUser] = useState('')
+  const [user, setUser] = useState(null)
 
   return (
     <div className="App">
